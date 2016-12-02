@@ -9,13 +9,15 @@ namespace TestClassi
         public int maxHp;
         public int curHp;
         public int damage;
+        public int healfactor;
         
-        public Monster(string name, int maxHp, int damage)
+        public Monster(string name, int maxHp, int damage, int healfactor)
         {
             this.name = name;
             this.maxHp = maxHp;
             curHp = maxHp;
             this.damage = damage;
+            this.healfactor = healfactor;
             describe();
         }
 
@@ -53,6 +55,19 @@ namespace TestClassi
             {
                 Console.WriteLine("a " + target.name + " rimangono " + target.curHp + " hp");
             }
+        }
+        public void heal(Monster target)
+        {
+            if (curHp <= 0)
+            {
+                Console.WriteLine(target.name + "non puoi curare nessuno da morto");
+                return;
+            }
+            {if (target.curHp <= 0)
+                    Console.WriteLine(target.name + "non puoi curare nessuno da morto");
+                return;
+            }
+            target.curHp += healfactor;
         }
     }
 }
