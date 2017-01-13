@@ -15,8 +15,7 @@ namespace classe
 
         private int anni1;
         public int anni;
-        
-      
+
         
     }
 }
