@@ -1,20 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System;
+using System.Text;
+using System.Linq;
 
-namespace WindowsFormsApplication1
-{
-    public partial class Form1 : Form
+namespace classe
+{class persona
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        private string nome1;
+        public string nome { get; set; }
+
+        private string cognome1;
+        public string cognome { get; set; }
+
+        private int anni1;
+        public int anni;
+        
+      
+        
     }
 }
+
